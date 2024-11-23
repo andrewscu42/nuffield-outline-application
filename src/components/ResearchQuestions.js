@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './ResearchQuestions.css';
 const ResearchQuestions = () => {
   const [formData, setFormData] = useState({
     researchQuestions: '',
@@ -68,18 +68,43 @@ const ResearchQuestions = () => {
     }));
   };
 
+  // Add CSS styles
+  const textareaStyle = {
+    width: '100%',
+    minHeight: '200px',
+    padding: '12px',
+    border: '2px solid #4CAF50', // Green border
+    borderRadius: '4px',
+    fontSize: '16px',
+    lineHeight: '1.5',
+    resize: 'vertical'
+  };
+
+  const formGroupStyle = {
+    marginBottom: '20px'
+  };
+
+  const labelStyle = {
+    display: 'block',
+    marginBottom: '8px',
+    fontWeight: 'bold'
+  };
+
   return (
     <div className="research-questions-form">
       <section>
         <h2>A) Research questions</h2>
-        <div className="form-group">
-          <label>What research questions will your project answer?</label>
+        <div className="form-group" style={formGroupStyle}>
+          <label style={labelStyle}>
+            What research questions will your project answer?
+          </label>
           <textarea
             name="researchQuestions"
             value={formData.researchQuestions}
             onChange={handleInputChange}
-            maxLength={2000} // Approximately 200 words
+            maxLength={2000}
             placeholder="Maximum 200 words"
+            style={textareaStyle}
           />
         </div>
       </section>
