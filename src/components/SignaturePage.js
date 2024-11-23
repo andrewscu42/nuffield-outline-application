@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 const SignaturePage = () => {
   const [formData, setFormData] = useState({
     signature: '',
