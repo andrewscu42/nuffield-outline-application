@@ -1,0 +1,54 @@
+.research-questions-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+    margin: 1em 0 .5em 0;
+    color: #0b545a !important;
+    border: 5px solid #0b545a !important;
+    border-radius: 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.checkbox-group {
+  margin: 15px 0;
+}
+
+.checkbox-group div {
+  margin: 10px 0;
+}
+
+.budget-table {
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+
+.budget-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+input[type="text"] {
+  padding: 5px;
+  width: 150px;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
