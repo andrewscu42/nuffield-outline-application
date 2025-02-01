@@ -1,0 +1,84 @@
+.progress-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  padding: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #e5e7eb;
+  border-radius: 2px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.progress-fill {
+  position: absolute;
+  height: 100%;
+  background-color: #0b545a;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.step-marker {
+  width: 12px;
+  height: 12px;
+  background-color: #e5e7eb;
+  border: 2px solid #e5e7eb;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.step.active .step-marker {
+  background-color: #0b545a;
+  border-color: #0b545a;
+}
+
+.step.current .step-marker {
+  background-color: #ffffff;
+  border-color: #0b545a;
+  box-shadow: 0 0 0 3px rgba(11, 84, 90, 0.2);
+}
+
+.step-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  transform: translateX(-50%);
+  left: 50%;
+  white-space: nowrap;
+}
+
+.step.active .step-label {
+  color: #0b545a;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .step-label {
+    display: none;
+  }
+  
+  .progress-container {
+    padding: 10px;
+  }
+} 

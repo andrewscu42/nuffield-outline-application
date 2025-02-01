@@ -205,6 +205,53 @@ const ResearchQuestions = () => {
       </section>
       
       <section>
+        <h2>E) Research and engagement team</h2>
+        <div className="form-group">
+          <label htmlFor="teamMembers">
+            Who will be working on the project? Include their name, organisation, 
+            and role, and briefly outline each person's relevant expertise and 
+            experience.
+          </label>
+          <textarea
+            id="teamMembers"
+            name="teamMembers"
+            value={formData.teamMembers}
+            onChange={handleInputChange}
+            maxLength={2500} // Approximately 250 words
+            placeholder="Maximum 250 words"
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="disseminationTeam">
+            Who will work on the dissemination and influencing strategy?
+          </label>
+          <textarea
+            id="disseminationTeam"
+            name="disseminationTeam"
+            value={formData.disseminationTeam}
+            onChange={handleInputChange}
+            maxLength={2500}
+            placeholder="Please describe"
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="newStaffRecruitment">
+            State whether any new staff will be recruited, and into which roles.
+          </label>
+          <textarea
+            id="newStaffRecruitment"
+            name="newStaffRecruitment"
+            value={formData.newStaffRecruitment}
+            onChange={handleInputChange}
+            maxLength={2500}
+            placeholder="Please describe"
+          />
+        </div>
+      </section>
+
+      <section>
         <h2>F) Budget</h2>
         <div className="budget-table">
           <div className="budget-row">

@@ -2,13 +2,16 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 section {
-    margin: 1em 0 .5em 0;
-    color: #0b545a !important;
-    border: 5px solid #0b545a !important;
-    border-radius: 0;
+  margin: 1em 0 .5em 0;
+  color: #2f3941;
+  border: 2px solid #0b545a;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #ffffff;
 }
 
 .form-group {
@@ -24,32 +27,70 @@ section {
   color: #2f3941;
 }
 
-.form-group textarea {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
   width: 100%;
-  min-height: 200px;
-  padding: 16px;
+  padding: 12px;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #2f3941;
   border: 2px solid #d4d7d9;
-  border-radius: 3px;
+  border-radius: 4px;
   background-color: #ffffff;
   transition: all 0.2s ease;
 }
 
-.form-group textarea:hover {
-  border-color: #00857c;
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+textarea:hover,
+select:hover {
+  border-color: #0b545a;
 }
 
-.form-group textarea:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
   outline: none;
-  border-color: #00857c;
-  box-shadow: 0 0 0 3px rgba(0, 133, 124, 0.2);
+  border-color: #0b545a;
+  box-shadow: 0 0 0 3px rgba(11, 84, 90, 0.2);
 }
 
-.form-group textarea::placeholder {
-  color: #6f7780;
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #0b545a;
+}
+
+button {
+  background-color: #0b545a;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0a4147;
+}
+
+section h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0b545a;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #0b545a;
 }
 
 .checkbox-group {
@@ -83,10 +124,35 @@ label {
   display: block;
 }
 
-section h2 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
+.form-header {
+  margin-bottom: 24px;
+}
+
+.form-instruction {
   color: #2f3941;
-  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+
+.required {
+  color: #d92b2b;
+  margin-left: 2px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+}
+
+select {
+  background-color: #ffffff;
+  cursor: pointer;
 }

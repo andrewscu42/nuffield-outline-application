@@ -1,7 +1,7 @@
 import './NavigationButtons.css';
 export default function NavigationButtons({ currentPage, onNext, onPrevious }) {
   return (
-    <div className="mt-8 flex justify-between">
+    <div className="mt-8 flex justify-between px-[15%]">
       {currentPage > 1 && (
         <button
           onClick={onPrevious}

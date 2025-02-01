@@ -1,35 +1,40 @@
+import React from 'react';
 import './ProgressIndicator.css';
-export default function ProgressIndicator({ currentPage }) {
+
+const ProgressIndicator = ({ currentStep }) => {
   const steps = [
     'Principal Investigator',
-    'Project Information',
     'Research Questions',
+    'Case for Importance',
+    'Outcomes',
+    'Methods',
+    'Team',
+    'Budget',
+    'References',
     'Signature'
   ];
 
   return (
-    <div className="mb-8">
-      <div className="flex justify-between">
-        {steps.map((label, index) => (
+    <div className="progress-container">
+      <div className="progress-bar">
+        <div 
+          className="progress-fill"
+          style={{ width: `${(currentStep / (steps.length - 1)) * 100}%` }}
+        ></div>
+      </div>
+      <div className="steps-container">
+        {steps.map((step, index) => (
           <div 
-            key={label} 
-            className={`flex flex-col items-center w-1/4 ${
-              currentPage > index + 1 ? 'text-green-500' : 
-              currentPage === index + 1 ? 'text-blue-500' : 
-              'text-gray-400'
-            }`}
+            key={index}
+            className={`step ${index <= currentStep ? 'active' : ''} ${index === currentStep ? 'current' : ''}`}
           >
-            <div className={`rounded-full h-8 w-8 flex items-center justify-center border-2 
-              ${currentPage > index + 1 ? 'border-green-500 bg-green-500 text-white' : 
-                currentPage === index + 1 ? 'border-blue-500 bg-blue-500 text-white' : 
-                'border-gray-400'}`}
-            >
-              {index + 1}
-            </div>
-            <span className="text-sm mt-2">{label}</span>
+            <div className="step-marker"></div>
+            <div className="step-label">{step}</div>
           </div>
         ))}
       </div>
     </div>
   );
-}
+};
+
+export default ProgressIndicator;
