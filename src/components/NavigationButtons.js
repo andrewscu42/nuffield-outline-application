@@ -5,27 +5,33 @@ export default function NavigationButtons({ currentPage, onNext, onPrevious }) {
     <div className="navigation-container">
       <div className="navigation-buttons">
         {currentPage > 1 && (
-          <button
-            onClick={onPrevious}
-            className="navigation-btn"
-          >
-            Previous Page
-          </button>
+          <div className="nav-btn-wrapper">
+            <button
+              onClick={onPrevious}
+              className="navigation-btn"
+            >
+              Previous Page
+            </button>
+          </div>
         )}
         {currentPage < 4 ? (
-          <button
-            onClick={onNext}
-            className="navigation-btn"
-          >
-            Next Page
-          </button>
+          <div className="nav-btn-wrapper">
+            <button
+              onClick={onNext}
+              className="navigation-btn"
+            >
+              Next Page
+            </button>
+          </div>
         ) : (
-          <button
-            type="submit"
-            className="navigation-btn"
-          >
-            Submit Application
-          </button>
+          <div className="nav-btn-wrapper">
+            <button
+              type="submit"
+              className="navigation-btn"
+            >
+              Submit Application
+            </button>
+          </div>
         )}
       </div>
     </div>

@@ -9,13 +9,17 @@
 
 .navigation-container {
   margin: 2rem 0;
-  padding: 0 15%;
+  padding: 0 25%;
 }
 
 .navigation-buttons {
   display: flex;
   justify-content: space-between;
-  gap: 4rem;
+  width: 100%;
+}
+
+.nav-btn-wrapper {
+  flex: 0 0 auto;
 }
 
 .navigation-btn {
