@@ -102,6 +102,7 @@ section h2 {
 }
 
 .budget-table {
+  width: 100%;
   border: 1px solid #ddd;
   padding: 15px;
 }
@@ -111,16 +112,33 @@ section h2 {
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
+  gap: 20px;
 }
 
-input[type="text"] {
-  padding: 5px;
+.budget-input {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
-label {
-  font-weight: 500;
-  margin-bottom: 5px;
-  display: block;
+.budget-field {
+  width: 120px;
+  text-align: right;
+  padding: 4px 8px;
+  border: 1px solid #0b545a;
+  border-radius: 4px;
+}
+
+.budget-total {
+  font-weight: 600;
+  color: #0b545a;
+}
+
+.total {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 2px solid #0b545a;
+  font-weight: 600;
 }
 
 .form-header {
