@@ -4,13 +4,8 @@ import './ProgressIndicator.css';
 const ProgressIndicator = ({ currentStep }) => {
   const steps = [
     'Principal Investigator',
+    'Project Information'
     'Research Questions',
-    'Case for Importance',
-    'Outcomes',
-    'Methods',
-    'Team',
-    'Budget',
-    'References',
     'Signature'
   ];
 
