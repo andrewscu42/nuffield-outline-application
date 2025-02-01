@@ -1,4 +1,4 @@
-import './ResearchQuestions.css';
+import './PrincipalInvestigator.css';
 import ProgressIndicator from './ProgressIndicator';
 
 export default function PrincipalInvestigator() {

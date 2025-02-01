@@ -68,28 +68,6 @@ const ResearchQuestions = () => {
     }));
   };
 
-  // Add CSS styles
-  const textareaStyle = {
-    width: '100%',
-    minHeight: '200px',
-    padding: '12px',
-    border: '2px solid #4CAF50', // Green border
-    borderRadius: '4px',
-    fontSize: '16px',
-    lineHeight: '1.5',
-    resize: 'vertical'
-  };
-
-  const formGroupStyle = {
-    marginBottom: '20px'
-  };
-
-  const labelStyle = {
-    display: 'block',
-    marginBottom: '8px',
-    fontWeight: 'bold'
-  };
-
   return (
     <div className="research-questions-form">
       <section>
