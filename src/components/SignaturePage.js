@@ -23,18 +23,20 @@ const SignaturePage = () => {
         
         <div className="data-section">
           <h3>What we do with your data</h3>
-          <p>
-            We will use the data submitted on this form to process and make a decision on your application. 
-            As part of this review process, we may share your personal data with individuals outside the Foundation. 
-            This will always be on a confidential basis and we will ensure that your data is kept secure.
-          </p>
-          <p>
-            If we decide to award a grant, we will use the personal data submitted as part of your application 
-            for our grant management processes. We will include the name of the principal investigator in lists 
-            of our grant-holders and in summaries of funded projects published online and in hard copy. In addition 
-            to data processing for grant management, we will also use your data in ongoing monitoring and evaluation 
-            of our grant activities and impact assessment work.
-          </p>
+          <div className="data-text">
+            <p>
+              We will use the data submitted on this form to process and make a decision on your application. 
+              As part of this review process, we may share your personal data with individuals outside the Foundation. 
+              This will always be on a confidential basis and we will ensure that your data is kept secure.
+            </p>
+            <p>
+              If we decide to award a grant, we will use the personal data submitted as part of your application 
+              for our grant management processes. We will include the name of the principal investigator in lists 
+              of our grant-holders and in summaries of funded projects published online and in hard copy. In addition 
+              to data processing for grant management, we will also use your data in ongoing monitoring and evaluation 
+              of our grant activities and impact assessment work.
+            </p>
+          </div>
         </div>
 
         <div className="data-section">
