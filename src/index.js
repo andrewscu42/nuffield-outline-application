@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import ProgressIndicator from './components/ProgressIndicator';
 import PrincipalInvestigator from './components/PrincipalInvestigator';
 import ProjectInformation from './components/ProjectInformation';
 import ResearchQuestions from './components/ResearchQuestions';
