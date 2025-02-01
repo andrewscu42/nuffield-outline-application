@@ -24,11 +24,16 @@ body {
     padding: 1.75rem 0;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .header-content {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -40,6 +45,7 @@ body {
     height: auto;
     margin-right: 2rem;
     display: block;
+    object-fit: contain;
 }
 
 .application-title {
@@ -53,6 +59,7 @@ body {
 }
 
 .main-content {
+    margin-top: 6rem;
     flex: 1;
     padding: 2rem 0;
 }
