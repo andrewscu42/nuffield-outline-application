@@ -6,19 +6,37 @@
     background-color: #0b545a;
     color: #ffffff;
   }
-  .navigation-btn {
-    background-color: white;
-    color: #0b545a;
-    border: 2px solid #0b545a;
-    padding: 8px 16px;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 600;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-  
-  .navigation-btn:hover {
-    background-color: #0b545a;
-    color: white;
-  }
+
+.navigation-container {
+  margin: 2rem 0;
+  padding: 0 15%;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.navigation-btn {
+  background-color: white;
+  color: #0b545a;
+  border: 2px solid #0b545a;
+  padding: 8px 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 120px;
+}
+
+.navigation-btn:hover {
+  background-color: #0b545a;
+  color: white;
+}
+
+/* When there's only one button, align it to the right */
+.navigation-buttons:has(.navigation-btn:only-child) {
+  justify-content: flex-end;
+}
