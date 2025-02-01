@@ -1,3 +1,4 @@
+import './ProgressIndicator.css';
 export default function ProgressIndicator({ currentPage }) {
   const steps = [
     'Principal Investigator',

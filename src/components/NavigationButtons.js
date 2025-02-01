@@ -1,3 +1,4 @@
+import './NavigationButtons.css';
 export default function NavigationButtons({ currentPage, onNext, onPrevious }) {
   return (
     <div className="mt-8 flex justify-between">

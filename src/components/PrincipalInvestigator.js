@@ -1,3 +1,4 @@
+import './ResearchQuestions.css';
 export default function PrincipalInvestigator() {
     return (
       <div>
