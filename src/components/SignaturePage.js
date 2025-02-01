@@ -50,11 +50,12 @@ const SignaturePage = () => {
         </div>
 
         <div className="declaration">
-          <h3>Declaration/Signature</h3>
+          <h3>Declaration</h3>
           <p>
             I have read the Guide for applicants and believe that this application meets the eligibility 
             criteria for funding. You don't need to use an electronic signature to declare completion of 
-            the application form. Simply typing your name is acceptable:
+            the application form.
+            <div className="declaration-text">Simply typing your name is acceptable:</div>
           </p>
           <input
             type="text"

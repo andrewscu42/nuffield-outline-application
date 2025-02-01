@@ -113,8 +113,8 @@ const ResearchQuestions = () => {
 
         <section>
           <h2>C) Outcomes and influence</h2>
+          <h3>What type of impact do you expect your project to have?</h3>
           <div className="checkbox-group">
-            <label>What type of impact do you expect your project to have?</label>
             <div>
               <input
                 type="checkbox"

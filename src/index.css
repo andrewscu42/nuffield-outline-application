@@ -21,14 +21,15 @@ body {
 
 .app-header {
     background-color: #0b545a;
-    padding: 1rem 0;
+    padding: 1.75rem 0;
 }
 
 .application-title {
     font-family: "Source Sans Pro", sans-serif;
-    padding: 1.75rem 3rem;
+    padding: 0 3rem;
     margin: 0;
-    font-size: 32px;
+    font-size: 1.5rem;
+    font-weight: 700;
     color: #ffffff;
     text-align: center;
 }
@@ -39,9 +40,9 @@ body {
 }
 
 .content-wrapper {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 20px;
 }
 
 /* Navigation buttons */
@@ -54,40 +55,38 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    gap: calc(25% + 20px); /* 25% of button width plus some extra spacing */
+    gap: calc(25% + 20px);
 }
 
 .navigation-btn {
-    background-color: white;
-    color: #0b545a;
-    border: 2px solid #0b545a;
-    padding: 12px 32px;
+    background-color: #0b545a;
+    color: white;
+    border: none;
+    padding: 12px 24px;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 600;
     border-radius: 4px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: background-color 0.2s ease;
     min-width: 140px;
 }
 
 .prev-btn {
-    margin-right: auto; /* Aligns to the left */
+    margin-right: auto;
 }
 
-.next-btn:hover {
-    background-color: #0b545a;
-    color: white;
+.navigation-btn:hover {
+    background-color: #0a4147;
 }
 
 .submit-btn {
-    background-color: #ff6b6b; /* Pastel red */
+    background-color: #0b545a;
     color: white;
-    border-color: #ff6b6b;
+    border: none;
 }
 
 .submit-btn:hover {
-    background-color: #ff5252; /* Darker shade for hover */
-    border-color: #ff5252;
+    background-color: #0a4147;
 }
 
 /* When there's only one button, align it to the right */
@@ -99,7 +98,7 @@ body {
 @media (max-width: 768px) {
     .application-title {
         padding: 1rem;
-        font-size: 24px;
+        font-size: 1.25rem;
     }
 
     .navigation-container {
@@ -107,6 +106,6 @@ body {
     }
 
     .content-wrapper {
-        padding: 0 0.5rem;
+        padding: 0 20px;
     }
 }
