@@ -6,6 +6,7 @@ import ProjectInformation from './components/ProjectInformation';
 import ResearchQuestions from './components/ResearchQuestions';
 import SignaturePage from './components/SignaturePage';
 import NavigationButtons from './components/NavigationButtons';
+import logo from './assets/nuffield-foundation-logo-578x358.png';
 
 function App() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -41,6 +42,7 @@ function App() {
         onNext={handleNext}
         onPrevious={handlePrevious}
       />
+      <img src={logo} alt="Nuffield Foundation" class="logo" />
     </div>
   );
 }

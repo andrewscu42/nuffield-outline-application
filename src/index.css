@@ -22,15 +22,33 @@ body {
 .app-header {
     background-color: #0b545a;
     padding: 1.75rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    margin-right: 2rem;
+    display: block;
 }
 
 .application-title {
     font-family: "Source Sans Pro", sans-serif;
-    padding: 0 3rem;
     margin: 0;
     font-size: 1.5rem;
     font-weight: 700;
     color: #ffffff;
+    flex: 1;
     text-align: center;
 }
 
@@ -96,6 +114,18 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        width: 140px;
+    }
+
     .application-title {
         padding: 1rem;
         font-size: 1.25rem;
