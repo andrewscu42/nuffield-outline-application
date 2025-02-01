@@ -47,17 +47,14 @@ body {
 /* Navigation buttons */
 .navigation-container {
     margin: 2rem 0;
-    padding: 0 25%;
+    padding: 0 15%;
 }
 
 .navigation-buttons {
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
-
-.nav-btn-wrapper {
-    flex: 0 0 auto;
+    gap: calc(25% + 20px); /* 25% of button width plus some extra spacing */
 }
 
 .navigation-btn {
@@ -73,9 +70,24 @@ body {
     min-width: 140px;
 }
 
-.navigation-btn:hover {
+.prev-btn {
+    margin-right: auto; /* Aligns to the left */
+}
+
+.next-btn:hover {
     background-color: #0b545a;
     color: white;
+}
+
+.submit-btn {
+    background-color: #ff6b6b; /* Pastel red */
+    color: white;
+    border-color: #ff6b6b;
+}
+
+.submit-btn:hover {
+    background-color: #ff5252; /* Darker shade for hover */
+    border-color: #ff5252;
 }
 
 /* When there's only one button, align it to the right */

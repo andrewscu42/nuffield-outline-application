@@ -1,4 +1,4 @@
-import './ResearchQuestions.css';
+import './Outline.css';
 import ProgressIndicator from './ProgressIndicator';
 
 export default function ProjectInformation() {

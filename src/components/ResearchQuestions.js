@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ResearchQuestions.css';
+import './Outline.css';
 import ProgressIndicator from './ProgressIndicator';
 
 const ResearchQuestions = () => {
