@@ -8,3 +8,4 @@ import ProjectInformation from './components/ProjectInformation';
 import ResearchQuestions from './components/ResearchQuestions';
 import SignaturePage from './components/SignaturePage';
 import NavigationButtons from './components/NavigationButtons';
+import logo from './assets/nuffield_logo_white.png';
