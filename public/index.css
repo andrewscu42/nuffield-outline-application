@@ -1,8 +1,149 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f5f5f5;
+  color: #2f3941;
+  line-height: 1.5;
+}
+
+/* Layout */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #0b545a;
+  padding: 1.75rem 0;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  margin-right: 2rem;
+  display: block;
+  object-fit: contain;
+  position: fixed;
+}
+
 .application-title {
-    font-family: "Arial";
-    padding: 1.75rem 3rem !important;
-    margin: 0;
-    font-size: 32px;
-    background-color: #00e1b3;
-    color: #0b545a;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  flex: 1;
+  text-align: center;
+}
+
+.main-content {
+  margin-top: 6rem;
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation buttons */
+.navigation-container {
+  margin: 2rem 0;
+  padding: 0 15%;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: calc(25% + 20px);
+}
+
+.navigation-btn {
+  background-color: #0b545a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  min-width: 140px;
+}
+
+.prev-btn {
+  margin-right: auto;
+}
+
+.navigation-btn:hover {
+  background-color: #0a4147;
+}
+
+.submit-btn {
+  background-color: #0b545a;
+  color: white;
+  border: none;
+}
+
+.submit-btn:hover {
+  background-color: #0a4147;
+}
+
+/* When there's only one button, align it to the right */
+.navigation-buttons:has(.navigation-btn:only-child) {
+  justify-content: flex-end;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-content {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
   }
+
+  .logo {
+      margin-right: 0;
+      margin-bottom: 1rem;
+      width: 140px;
+  }
+
+  .application-title {
+      padding: 1rem;
+      font-size: 1.25rem;
+  }
+
+  .navigation-container {
+      padding: 0 1rem;
+  }
+
+  .content-wrapper {
+      padding: 0 20px;
+  }
+}

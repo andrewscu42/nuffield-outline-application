@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title className="application-title">Outline Application Research Development and Analysis</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="./index.js"></script>
+    <title>Outline Application Research Development and Analysis</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <script type="module" src="./index.js"></script>
 </head>
-<body class="bg-gray-100">
-    <div class="min-h-screen">
-        <main class="container mx-auto px-4 py-8">
-            <h1 class="text-4xl font-bold text-center mb-8">Outline Application Research Development and Analysis</h1>
-            
-            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <img src="./assets/nuffield-foundation-logo-578x358.png" alt="Nuffield Foundation" class="logo" />
+                <h1 class="application-title">Outline Application Research Development and Analysis</h1>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="content-wrapper">
                 <div id="root"></div>
             </div>
         </main>

@@ -46,6 +46,7 @@ body {
     margin-right: 2rem;
     display: block;
     object-fit: contain;
+    position: fixed;
 }
 
 .application-title {
