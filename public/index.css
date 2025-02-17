@@ -24,16 +24,16 @@ body {
   padding: 1.75rem 0;
   display: flex;
   align-items: center;
-  position: fixed;
-  top: 0;
+  justify-content: center;
+  position: relative;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
 }
 
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -41,12 +41,8 @@ body {
 }
 
 .logo {
-  width: 180px;
-  height: auto;
-  margin-right: 2rem;
-  display: block;
-  object-fit: contain;
-  position: fixed;
+  width: auto;
+  height: 52px;
 }
 
 .application-title {
