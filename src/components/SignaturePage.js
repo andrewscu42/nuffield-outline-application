@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Outline.css';
+import ProgressIndicator from './ProgressIndicator';
 const SignaturePage = () => {
   const [formData, setFormData] = useState({
     signature: '',
@@ -17,7 +18,8 @@ const SignaturePage = () => {
   };
 
   return (
-    <div className="signature-page">
+    <div className="section">
+      <ProgressIndicator currentStep={10} />
       <section className="personal-data">
         <h2>Information about your personal data</h2>
         
@@ -66,10 +68,9 @@ const SignaturePage = () => {
           />
         </div>
       </section>
-      <section className="newsletter">
+      <section className="data-section">
         <h2>Stay Informed</h2>
-        
-        <div className="form-group">
+        <div>
           <h3>Would you like to subscribe to Nuffield Foundation Newsletter?</h3>
           <div className="radio-group">
             <div>

@@ -5,7 +5,7 @@ export default function PrincipalInvestigator() {
     return (
       <>
         <ProgressIndicator currentStep={0} />
-        <section className="research-questions-form">
+        <section className="section">
           <div className="form-header">
             <h2>Principal Investigator details</h2>
             <p className="form-instruction">

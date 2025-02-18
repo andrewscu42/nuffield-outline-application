@@ -27,7 +27,6 @@ body {
   justify-content: center;
   position: relative;
   width: 100%;
-  z-index: 1;
 }
 
 .header-content {
@@ -48,17 +47,10 @@ body {
 .application-title {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
-  font-size: 1.5rem;
   font-weight: 700;
   color: #ffffff;
   flex: 1;
   text-align: center;
-}
-
-.main-content {
-  margin-top: 6rem;
-  flex: 1;
-  padding: 2rem 0;
 }
 
 .content-wrapper {
@@ -66,33 +58,6 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-
-/* Navigation buttons */
-.navigation-container {
-  margin: 2rem 0;
-  padding: 0 15%;
-}
-
-.navigation-buttons {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  gap: calc(25% + 20px);
-}
-
-.navigation-btn {
-  background-color: #0b545a;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  min-width: 140px;
-}
-
 .prev-btn {
   margin-right: auto;
 }

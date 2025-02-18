@@ -75,10 +75,15 @@ const ResearchQuestions = () => {
     return total.toLocaleString();
   };
 
+  const[currentStep, setCurrentStep] = useState(0);
+  const updateStep = (step) => {
+    setCurrentStep(step);
+  };
+
   return (
     <>
-      <ProgressIndicator currentStep={1} />
-      <div className="research-questions-form">
+      <ProgressIndicator currentStep={currentStep} updateStep={updateStep} />
+      <div className="section">
         <section>
           <h2>A) Research questions</h2>
           <div className="form-group">
@@ -88,7 +93,10 @@ const ResearchQuestions = () => {
             <textarea
               name="researchQuestions"
               value={formData.researchQuestions}
-              onChange={handleInputChange}
+              onChange={(e) => {
+                handleInputChange(e);
+                updateStep(1); 
+              }}
               maxLength={2000}
               placeholder="Maximum 200 words"
             />
@@ -104,7 +112,10 @@ const ResearchQuestions = () => {
             <textarea
               name="projectImportance"
               value={formData.projectImportance}
-              onChange={handleInputChange}
+              onChange={(e) => {
+                handleInputChange(e);
+                updateStep(2); 
+              }}
               maxLength={3000}
               placeholder="Maximum 300 words"
             />
@@ -168,7 +179,10 @@ const ResearchQuestions = () => {
             <textarea
               name="impactAchievement"
               value={formData.impactAchievement}
-              onChange={handleInputChange}
+              onChange={(e) => {
+                handleInputChange(e);
+                updateStep(3); 
+              }}              
               maxLength={3500} // Approximately 350 words
               placeholder="Maximum 350 words"
             />
@@ -183,7 +197,10 @@ const ResearchQuestions = () => {
             <textarea
               name="methods"
               value={formData.methods}
-              onChange={handleInputChange}
+              onChange={(e) => {
+                handleInputChange(e);
+                updateStep(4); 
+              }}
               maxLength={6000} // Approximately 600 words
               placeholder="Maximum 600 words"
             />
@@ -202,7 +219,10 @@ const ResearchQuestions = () => {
               id="teamMembers"
               name="teamMembers"
               value={formData.teamMembers}
-              onChange={handleInputChange}
+              onChange={(e) => {
+                handleInputChange(e);
+                updateStep(5); 
+              }}
               maxLength={2500} // Approximately 250 words
               placeholder="Maximum 250 words"
             />
@@ -216,7 +236,10 @@ const ResearchQuestions = () => {
               id="disseminationTeam"
               name="disseminationTeam"
               value={formData.disseminationTeam}
-              onChange={handleInputChange}
+              onChange={(e) => {
+                handleInputChange(e);
+                updateStep(6); 
+              }}
               maxLength={2500}
               placeholder="Please describe"
             />
@@ -230,7 +253,10 @@ const ResearchQuestions = () => {
               id="newStaffRecruitment"
               name="newStaffRecruitment"
               value={formData.newStaffRecruitment}
-              onChange={handleInputChange}
+              onChange={(e) => {
+                handleInputChange(e);
+                updateStep(7); 
+              }}
               maxLength={2500}
               placeholder="Please describe"
             />
@@ -248,8 +274,11 @@ const ResearchQuestions = () => {
                   type="text"
                   name="piTime"
                   value={formData.budget.piTime}
-                  onChange={handleBudgetChange}
                   className="budget-field"
+                  onChange={(e) => {
+                    handleBudgetChange(e);
+                    updateStep(8); 
+                  }}
                 />
               </div>
             </div>
@@ -385,8 +414,10 @@ const ResearchQuestions = () => {
             <textarea
               name="references"
               value={formData.references}
-              onChange={handleInputChange}
-              maxLength={3500}
+              onChange={(e) => {
+                handleInputChange(e);
+                updateStep(9); 
+              }}              maxLength={3500}
               placeholder="Maximum 350 words"
             />
           </div>

@@ -5,7 +5,7 @@ export default function ProjectInformation() {
     return (
         <>
             <ProgressIndicator currentStep={1} />
-            <section className="research-questions-form">
+            <section className="section">
                 <div className="form-header">
                     <h2>Project Information</h2>
                 </div>

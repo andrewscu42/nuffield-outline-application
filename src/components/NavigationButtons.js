@@ -1,4 +1,4 @@
-import '../index.css';
+import './index.css';
 
 export default function NavigationButtons({ currentPage, onNext, onPrevious }) {
   return (
@@ -19,14 +19,14 @@ export default function NavigationButtons({ currentPage, onNext, onPrevious }) {
           >
             Next Page
           </button>
-        ) : (
+        ) : currentPage === 4 ? (
           <button
             type="submit"
             className="navigation-btn submit-btn"
           >
             Submit Application
           </button>
-        )}
+        ) : null}
       </div>
     </div>
   );
