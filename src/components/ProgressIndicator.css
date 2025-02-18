@@ -23,9 +23,32 @@
   transition: width 0.3s ease;
   background-size: 200% 100%;
   border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    #0b545a,  /* Original dark green */
+    #0a4347,  /* Slightly darker */
+    #0c656d,  /* Slightly lighter */
+    #083c41   /* Darkest shade */
+  );
+  background-size: 200% 100%; 
   transition: width 0.3s ease;
   animation: sparkle 2s linear infinite,
              shimmer 3s infinite linear;
+}
+
+@keyframes sparkle {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes shimmer {
+  0% { filter: brightness(100%); }
+  50% { filter: brightness(125%); }    /* More dramatic pulse */
+  100% { filter: brightness(100%); }
 }
 .progress-percentage {
   position: relative;
