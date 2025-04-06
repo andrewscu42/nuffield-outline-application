@@ -66,13 +66,25 @@ const ResearchQuestions = () => {
       budget: {
         ...prev.budget,
         [name]: value
-      }
+      },
     }));
-  };
 
-  const calculateTotal = () => {
-    const total = Object.values(formData.budget).reduce((sum, value) => sum + Number(value), 0);
-    return total.toLocaleString();
+    setFormData(prev => {
+      let newBudget = { ...prev.budget, [name]: value };
+      let total = Object.values(newBudget).reduce((sum, val) => sum + Number(val), 0);
+
+      if (total > 750000) {
+        alert("Total budget cannot exceed £750,000");
+        // Prevent the change by returning the previous state
+        return prev;
+      } else {
+        // Apply the change
+        return {
+          ...prev,
+          budget: newBudget,
+        }
+      }
+    });
   };
 
   const[currentStep, setCurrentStep] = useState(0);
@@ -401,7 +413,19 @@ const ResearchQuestions = () => {
             </div>
             <div className="budget-row total">
               <label>Grand total (£)</label>
-              <div className="budget-total">£{calculateTotal()}</div>
+              <div className="budget-total">£{
+                 Object.values(formData.budget).reduce((sum, value) => {
+                  const num = Number(value);
+                  return sum + (isNaN(num) ? 0 : num);
+                }, 0).toLocaleString()
+                }
+              </div>
+
+
+
+
+
+
             </div>
           </div>
         </section>
